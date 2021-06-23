@@ -1,0 +1,53 @@
+/* Zusatzfeatures werden im Editor unter "Attribute" eingestellt! */
+
+1.07
+Neu: "Hardcore" Medic-Settings
+
+1.06
+Tweak: Disablechannels 6 hinzugekommen, blendet Servernachrichten aus.
+
+1.05
+29.11.2019
+Neu: Sichtweiten-Menü (Einstellbar via Editor).
+Neu: Einstellung, die JIP-Spielern für 3 Minuten den Teleporter ins Mausradmenü gibt.
+Neu: Für ACRE Babel können Übersetzer eingestellt werden.
+Neu: Weitere Erklärungen
+Fixed: Fehlerhafte Erklärungen
+
+1.0
+28.11.2019
+Neu: Die Konfiguration des Frameworks wird nun im Edtor vorgenommen. Neue Features werden damit über den Launcher gezogen.
+Neu: Man kann einstellen, ob auch Zivilisten automatisch Funkgeräte zugewiesen bekommen.
+Entfernt: Viele Features rund um ACRE Babel. Es ist nach wie vor Möglich, allen Fraktionen eine eigene Sprache zu geben und zu benennen. Bei der komplexen Thematik ist es besser, missionsspezifische Lösungen zu schreiben.
+Entfernt: Briefing.sqf (Wird in der Missionsbau-Kurzanleitung behandelt werden)
+
+0.99995
+21.11.2019
+Neu: "briefingName" zur Description.ext. Definiert den in der Lobby sichtbaren Namen.
+Neu: Die Mod-Presets (Medic- und Logistiksystem) liegen nun ebenfalls auf dem Server, um Zukunfts-Kompatibilität zu gewährleisten.
+Neu: Alle "Erweiterungen" der Init-Dateien liegen nun auf dem Server - Sie waren sowieso nie zum Editieren gedacht.
+Update: Die Description.ext enthält nun alle vorher versteckten Einstellungen. Erweiterte Einstellungen werden mit einem Verweis von den benötigten Einstellungen getrennt.
+Update: Formatierung für Lesbarkeit und um zu verhindern, dass wichtige Framework-Teile gelöscht werden, weil sie sich zu weit unten befinden. :D
+
+0.999
+06.11.2019
+Neu: Die cba_settings.sqf im Hauptordner >>MUSS<< zum Festlegen des Medic- und Logistiksystems verwendet werden.
+Neu: ACE Medic Einstellungen. Drei Schwierigkeitsgrade: Standard sowie Arcade (easy) und Ironpack (Hart/MilSim).
+Neu: ACE Logistik Einstellungen. Zwei Schwierigkeitsgrade: Standard und Erweitert.
+Entfernt: Sämtliche Funktionen und Dialoge (Liegen nun auf dem Server, werden aber weiterhin via Framework konfiguriert).
+
+
+0.997
+29.10.2019
+Eine leere CBA-Settings Datei wurde hinzugefügt.
+
+0.995
+12.10.2019
+Neu: Teleport-Zusatzfeature. (Objekte können als Teleportstationen ausgewiesen werden).
+Neu: RR_commons_core_fnc_isVehicleEmpty, eine Funktion, die angibt, ob ein Fahrzeug vollbesetzt ist.
+Neu: Interne Struktur für den Umgang mit Dialogen. Im RR_Commons Ordner gibt es nun den Unterordner "dialoge"
+Tweaked: Kommentierung, Formatierung
+
+0.99
+10.10.2019
+- Kompletter Rewrite von LAxemann

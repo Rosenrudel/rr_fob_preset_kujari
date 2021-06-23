@@ -1,0 +1,31 @@
+/*
+	Diese Datei dient der Definition von Dingen wie Ladebildschirmen und
+	Missionsnamen. Zudem dient sie als erweiterter Arm der A3-Konfiguration,
+	sodass hier auch neue Sounds, Menüs etc. definiert werden können.
+*/
+/* Beschreibungen, Ladebilder etc. */
+author = "Pax_Jarome";
+briefingName = "RR COXX Geydam Rebellion Teil I v1";
+onLoadName = "Geydam Rebellion Teil I";
+loadScreen = "";
+onLoadMission = "Dreiteilige Einsatzreihe mit MOUT Fokus";
+overviewText = "Dreiteilige Einsatzreihe mit MOUT Fokus";
+gameType = COOP; // (https://community.bistudio.com/wiki/Multiplayer_Game_Types)
+
+/* Ab hier nur editieren, wenn Du ganz genau weißt, was Du machst! ;) */
+disabledAI = 1;
+disableChannels[] = {0,2,5,6};
+enableDebugConsole = 0;
+respawn = 3;
+respawnButton = 0;
+respawnDelay = 20;
+respawnDialog = 1;
+respawnOnStart = 0;
+saving = 0;
+
+/* Niemals löschen! */
+cba_settings_hasSettingsFile = 1;
+/**************************************************
+		Ab hier Raum für eigenen Inhalt
+**************************************************/
+
