@@ -1,16 +1,9 @@
-//*****************
-//Briefing Funktion
-//Nicht entfernen!
-//*****************
-FNC_Briefing = compile preprocessFileLineNumbers "briefing\briefing.sqf";
-FNC_Credits = compile preprocessFileLineNumbers "briefing\x\credits.sqf";
+#include 
 
-if (!isDedicated) then {
+FNC_PAX_Lights = compile preprocessFileLineNumbers "misc/lightsSRV.sqf";
 
-	waitUntil {!(isNull player)}; //JIP proofing
-	"" call FNC_Briefing;
-	"" call FNC_Credits;
+if (isServer) then {
+
+	["init",false] remoteExec ["FNC_PAX_Lights"];
+
 };
-//**********************
-//Briefing Funktion Ende
-//**********************
