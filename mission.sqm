@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14056.741,29.618855,9944.0898};
-		dir[]={0.29055807,-0.52465016,-0.80034059};
-		up[]={0.17909455,0.85118514,-0.49331236};
-		aside[]={-0.94009358,4.4498302e-007,-0.34129322};
+		pos[]={14040.054,33.721478,9926.0791};
+		dir[]={0.7613619,-0.53051502,0.37296215};
+		up[]={0.47656879,0.84753668,0.23345457};
+		aside[]={0.43997037,1.0362128e-006,-0.89815515};
 	};
 };
 binarizationWanted=0;
@@ -400,12 +400,13 @@ class Mission
 		class Item0
 		{
 			dataType="Marker";
-			position[]={14081.836,24.568729,9900.8789};
+			position[]={14121.505,23.885223,9975.2773};
 			name="marker_0";
 			text="C´3/1-201-INF";
 			type="b_motor_inf";
 			colorName="ColorWEST";
 			id=0;
+			atlOffset=1.9073486e-006;
 		};
 		class Item1
 		{
@@ -465,37 +466,37 @@ class Mission
 		class Item2
 		{
 			dataType="Marker";
-			position[]={14057.066,20.946289,9866.6455};
+			position[]={14121.755,24.452995,9959.1494};
 			name="marker_1";
 			text="B/2-3 REC";
 			type="b_recon";
 			colorName="ColorWEST";
 			id=8;
-			atlOffset=-0.67457581;
 		};
 		class Item3
 		{
 			dataType="Marker";
-			position[]={14082.084,21.915039,9883.8438};
+			position[]={14121.587,23.992613,9967.2949};
 			name="marker_2";
 			text="C´4´B/1-201-INF";
 			type="b_mech_inf";
 			colorName="ColorWEST";
 			id=9;
-			atlOffset=-1.1641159;
+			atlOffset=1.9073486e-006;
 		};
 		class Item4
 		{
 			dataType="Marker";
-			position[]={14081.837,24.57041,9900.8887};
+			position[]={14121.506,23.375977,9975.2871};
 			name="marker_3";
 			type="group_3";
 			id=10;
+			atlOffset=-0.50951195;
 		};
 		class Item5
 		{
 			dataType="Marker";
-			position[]={14082.083,23.080017,9883.8506};
+			position[]={14121.586,23.992369,9967.3018};
 			name="marker_4";
 			type="group_1";
 			id=11;
@@ -503,10 +504,11 @@ class Mission
 		class Item6
 		{
 			dataType="Marker";
-			position[]={14057.069,21.621323,9866.6504};
+			position[]={14121.758,23.491211,9959.1543};
 			name="marker_5";
 			type="group_0";
 			id=12;
+			atlOffset=-0.96157837;
 		};
 		class Item7
 		{
@@ -9977,7 +9979,7 @@ class Mission
 				position[]={14061.306,24.595459,9929.2852};
 				angles[]={6.1835093,2.8001015,6.2731848};
 			};
-			name="centerhelipad";
+			name="fob1_center_helipad";
 			id=666;
 			type="Logic";
 		};
