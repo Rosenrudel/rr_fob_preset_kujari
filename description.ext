@@ -5,9 +5,9 @@
 */
 /* Beschreibungen, Ladebilder etc. */
 author = "Pax_Jarome";
-briefingName = "RR COXX Geydam Statisch ZEUS v1";
+briefingName = "RR COXX Geydam Rebellion Statisch ZEUS v1";
 onLoadName = "Geydam";
-loadScreen = "res/geydamstaticloadscreen.paa";
+loadScreen = "res\geydamstaticloadscreen.paa";
 onLoadMission = "Statische ZEUS Mission für Abendmissionen mit MOUT Fokus";
 overviewText = "Statische ZEUS Mission für Abendmissionen mit MOUT Fokus";
 gameType = COOP; // (https://community.bistudio.com/wiki/Multiplayer_Game_Types)
@@ -19,8 +19,8 @@ enableDebugConsole = 0;
 respawn = 2; //respawn where you died. onPlayerRespawn.sqf will immediately fire, respawn you and fully hide your character instantly
 respawnButton = 0;
 respawnDelay = 0;
-respawnDialog = 1;
-respawnOnStart = -1; //-1 is important is we do not want to repsawn nor do we want onPlayerRespawn to be fired at mission start
+respawnDialog = 0;
+respawnOnStart = -1; //-1 is important is we do not want to respawn on start nor do we want onPlayerRespawn to be fired at mission start
 saving = 0;
 
 /* Niemals löschen! */
