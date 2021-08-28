@@ -3,6 +3,8 @@
 //params: [_execution = where and what to execute | _setTo = which state should the light have?]
 //By Pax
 ///////////////////////////////////////////////////////////////////////////////////////////
+#include "\core\devar.sqf"
+
 params [
 	"_execution","_setTo"
 ];
