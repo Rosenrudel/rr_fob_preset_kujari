@@ -2,13 +2,13 @@
 //Place all variables which do not change often or are never expected to change in here!
 ////////////////////////////////////////////////////////////////////////////////////////
 
-dummy = []; //dummy variable for personal confinience
+dummy = []; //dummy variable for personal convinience
 
-//defines for misc/lightsSRV.sqf
+//defines for misc\lights.sqf
 
-fob1_helipad_lights = nearestObjects [fob1_center_helipad, ["Land_PortableLight_double_F"], 50];
+_fob1_helipad_lights = nearestObjects [fob1_center_helipad, ["Land_PortableLight_double_F"], 50];
 
-//defines for misc/lights.sqf
+//defines for misc\lightsAddAction.sqf
 
 fob1_helipad_lights_on = [
 	"",

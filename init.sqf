@@ -1,6 +1,6 @@
 #include 
 
-FNC_PAX_Lights = compile preprocessFileLineNumbers "misc/lightsSRV.sqf";
+FNC_PAX_Lights = compile preprocessFileLineNumbers "misc\lights.sqf";
 
 if (isServer) then {
 

@@ -3,7 +3,7 @@
 //params: [_execution = where and what to execute | _setTo = which state should the light have?]
 //By Pax
 ///////////////////////////////////////////////////////////////////////////////////////////
-#include "\core\devar.sqf"
+#include "core\devar.sqf"
 
 params [
 	"_execution","_setTo"
@@ -19,7 +19,7 @@ switch (toLower _execution) do {
 
 				[_x, false] remoteExec ["BIS_fnc_switchLamp"];
 				
-			} forEach fob1_helipad_lights;
+			} forEach _fob1_helipad_lights;
 		
 		};
 
