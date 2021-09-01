@@ -1,6 +1,8 @@
 waitUntil {!(isNull player)}; //JIP proofing
 
-//"init" execVM "misc\lights.sqf";
+//["init",false] execVM "misc\lights.sqf";
 
-/*if (player getVariable ["isSurvivor", false]) then {
-};*/
+//making sure only players slotted in the TACP can interact
+if (player getVariable ["isTACP", false]) then {
+	execVM "misc\lightsAddAction.sqf";
+};

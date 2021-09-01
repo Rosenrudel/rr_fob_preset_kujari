@@ -1,9 +1,9 @@
-#include 
-
-FNC_PAX_Lights = compile preprocessFileLineNumbers "misc\lights.sqf";
+#include "core\devar.sqf"
 
 if (isServer) then {
 
-	["init",false] remoteExec ["FNC_PAX_Lights"];
+	[false,fob1HelipadLights] remoteExec ["FNC_PGS_Lights",2];
+	[false,fob1HelipadLandingLights] remoteExec ["FNC_PGS_Lights",2];
+	[false,fob1HelipadFloodLights] remoteExec ["FNC_PGS_Lights",2];
 
 };

@@ -1,5 +1,13 @@
-#include "core\devar.sqf"
+#include "..\core\devar.sqf"
 
-[fob1_center_helipad, 0, ["ACE_MainActions"], fob1_helipad_lights_on] call ace_interact_menu_fnc_addActionToObject;
+[fops_screen_right, 0, ["ACE_MainActions"], PGS_code_fob1HelipadLights_on] call ace_interact_menu_fnc_addActionToObject;
 
-[fob1_center_helipad, 0, ["ACE_MainActions"], fob1_helipad_lights_off] call ace_interact_menu_fnc_addActionToObject;
+[fops_screen_right, 0, ["ACE_MainActions"], PGS_code_fob1HelipadLights_off] call ace_interact_menu_fnc_addActionToObject;
+
+[fops_screen_right, 0, ["ACE_MainActions"], PGS_code_fob1HelipadLandingLights_on] call ace_interact_menu_fnc_addActionToObject;
+
+[fops_screen_right, 0, ["ACE_MainActions"], PGS_code_fob1HelipadLandingLights_off] call ace_interact_menu_fnc_addActionToObject;
+
+[fops_screen_right, 0, ["ACE_MainActions"], PGS_code_fob1HelipadFloodLights_on] call ace_interact_menu_fnc_addActionToObject;
+
+[fops_screen_right, 0, ["ACE_MainActions"], PGS_code_fob1HelipadFloodLights_off] call ace_interact_menu_fnc_addActionToObject;
