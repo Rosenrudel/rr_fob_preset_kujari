@@ -6,7 +6,7 @@ dummy = []; //dummy variable for personal convinience
 
 //defines geydam static functions
 
-FNC_PGS_Lights = compile preprocessFileLineNumbers "misc\lights.sqf";
+FNC_PGS_Lights = compileFinal preprocessFileLineNumbers "misc\lights.sqf";
 
 //defines for misc\lights.sqf
 
