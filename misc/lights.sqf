@@ -1,7 +1,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////
 //Script for switching lights from local addaction via ACE remoteexecuted on the server.
-//params: [_execution = where and what to execute | _setTo = which state should the light have?]
-//[_arrLights = get array from remoteExecCall]
+//params: [_setTo = which state should the light have?] [_arrLights = get array from remoteExecCall]
+//[_simDirt / _simDirtier = just a very bad way to freeze/unfreeze an otherwise blinking light]
 //By Pax
 ///////////////////////////////////////////////////////////////////////////////////////////
 //#include "..\core\devar.sqf"
