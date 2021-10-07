@@ -17,8 +17,8 @@
 	IronPack+ = MilSim, Baby.Endheilung nur im Lazarett. */
 // #define RR_MEDICSYSTEM_BASIS
 // #define RR_MEDICSYSTEM_IRONPACK
-// #define RR_MEDICSYSTEM_IRONPACKPLUS
-#define RR_MEDICSYSTEM_HARDCORE
+#define RR_MEDICSYSTEM_IRONPACKPLUS
+// #define RR_MEDICSYSTEM_HARDCORE
 
 
 /*******************************
@@ -35,7 +35,7 @@ force force ace_explosives_punishNonSpecialists = true;	// Explosionswahrscheinl
 force force ace_explosives_requireSpecialist = false;		// Können Sprengsätze nur von Spezialisten entschärft werden?
 
 // ACE Feldrationen an? Mehr Infos: https://ace3mod.com/wiki/frameworkx/field-rations-framework.html
-force force acex_field_rations_enabled = false;
+force force acex_field_rations_enabled = true;
 
 
 
