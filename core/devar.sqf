@@ -7,12 +7,21 @@ dummy = []; //dummy variable for personal convinience
 //defines geydam static functions
 
 FNC_PGS_Lights = compileFinal preprocessFileLineNumbers "misc\lights.sqf";
+FNC_PGS_Briefing = compileFinal preprocessFileLineNumbers "briefing\briefing.sqf";
+FNC_PGS_Credits = compileFinal preprocessFileLineNumbers "briefing\x\credits.sqf";
 
 //defines for misc\lights.sqf
 
 fob1HelipadLights = nearestObjects [fob1_center_helipad, ["PortableHelipadLight_01_green_F"], 15];
 fob1HelipadLandingLights = nearestObjects [fob1_center_helipad, ["PortableHelipadLight_01_white_F"], 50];
 fob1HelipadFloodLights = nearestObjects [fob1_center_helipad, ["Land_PortableLight_02_single_folded_yellow_F"], 15];
+
+//defines for briefing\x\briefingCore.sqf
+
+private ["_info_ofw"];
+private ["_info_brf"];
+private ["_info_lac"];
+private ["_info_lad"];
 
 //defines for misc\lightsAddAction.sqf
 
