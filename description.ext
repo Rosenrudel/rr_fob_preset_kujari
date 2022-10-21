@@ -29,3 +29,15 @@ cba_settings_hasSettingsFile = 1;
 		Ab hier Raum für eigenen Inhalt
 **************************************************/
 
+class CfgFunctions
+{
+	class OFW
+	{
+		class Briefing
+		{
+			file = "briefing\core";
+			class briefingDisplay {};
+			class briefingAddCredits {};
+		};
+	};
+};

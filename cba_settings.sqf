@@ -23,8 +23,8 @@
 
 /*******************************
 	L O G I S T I K S Y S T E M */
-//#define RR_LOGISTIKSYSTEM_STANDARD
-#define RR_LOGISTIKSYSTEM_ERWEITERT
+#define RR_LOGISTIKSYSTEM_STANDARD
+//define RR_LOGISTIKSYSTEM_ERWEITERT
 
 
 /**********************
