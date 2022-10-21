@@ -1,0 +1,13 @@
+09.11.2021 v4
+- Inhalt der description.ext muss unter Leons Framework eingetragen werden
+- Datein in Ordner core wurden umbenannt
+- CfgFunctions entsprechend Vorlage eingerichtet
+- _briefingShow zu _showBriefing
+
+
+27.10.2021 v3
+- Funktionen umbenannt
+- Templates und Tamplateordner angelegt
+- Init erkennt nun automatisch ob sich briefings im briefing Ordner befinden
+- Erkennt die Init keine briefings mit Deitennamen ended die Init mit Null
+- Im Ordner core befinden sich nun nur noch code, der nicht mehr bearbeitet werden muss
