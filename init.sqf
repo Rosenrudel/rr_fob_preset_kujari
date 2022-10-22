@@ -1,4 +1,4 @@
-//#include "core\devar.sqf"
+#include "core\devar.sqf"
 
 if (isServer) then {
 

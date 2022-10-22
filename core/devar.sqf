@@ -6,6 +6,7 @@ dummy = []; //dummy variable for personal convinience
 
 //defines geydam static functions
 
+FNC_PGS_moveBlacky = compileFinal preprocessFileLineNumbers "misc\moveBlacky.sqf";
 FNC_PGS_Lights = compileFinal preprocessFileLineNumbers "misc\lights.sqf";
 
 //defines for misc\lights.sqf
@@ -14,12 +15,20 @@ fob1HelipadLights = nearestObjects [fob1_center_helipad, ["PortableHelipadLight_
 fob1HelipadLandingLights = nearestObjects [fob1_center_helipad, ["PortableHelipadLight_01_white_F"], 50];
 fob1HelipadFloodLights = nearestObjects [fob1_center_helipad, ["Land_PortableLight_02_single_folded_yellow_F"], 15];
 
+//defines for misc\moveBlacky.sqf
+
 //defines for briefing\x\briefingCore.sqf
 
 private ["_info_ofw"];
 private ["_info_brf"];
 private ["_info_lac"];
 private ["_info_lad"];
+
+//defines for DEBUG MODE
+
+debugModeOn = true;
+PGS_debugOnDefaultTransportTime = 5;
+PGS_debugOffDefaultTransportTime = 120;
 
 //defines for misc\lightsAddAction.sqf
 
@@ -124,6 +133,44 @@ PGS_code_fob1HelipadFloodLights_off = [
 			[false,fob1HelipadFloodLights] remoteExec ["FNC_PGS_Lights", 2];
 
 		}, {systemChat "Die Aktion wurde unterbrochen";}, "Ausschalten..."] call ace_common_fnc_progressBar;
+
+	}, 
+
+	{true}
+
+] call ace_interact_menu_fnc_createAction;
+
+//defines for misc\techAddAction.sqf
+
+PGS_code_fob1TransportBlackyToHangar = [
+	"", 
+	"Black Hawk >>> Hangar !VORSICHT!", 
+	"",
+	{
+
+		[PGS_defaultTransportTime, [], {
+
+			[rw_1,bhTransportHangarTarget,68] remoteExec ["FNC_PGS_moveBlacky", 2];
+
+		}, {systemChat "Die Aktion wurde unterbrochen";}, "Der Transport dauert 2 Minuten..."] call ace_common_fnc_progressBar;
+
+	}, 
+
+	{true}
+
+] call ace_interact_menu_fnc_createAction;
+
+PGS_code_fob1TransportBlackyToHelipad = [
+	"", 
+	"Black Hawk >>> Helipad !VORSICHT!", 
+	"",
+	{
+
+		[PGS_defaultTransportTime, [], {
+
+			[rw_1,bhTransportHelipadTarget,340] remoteExec ["FNC_PGS_moveBlacky", 2];
+
+		}, {systemChat "Die Aktion wurde unterbrochen";}, "Der Transport dauert 2 Minuten..."] call ace_common_fnc_progressBar;
 
 	}, 
 
